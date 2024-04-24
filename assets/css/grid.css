@@ -3,7 +3,7 @@
 .container,
 .container-fluid {
     --column-size: 12;
-    --spacer: 10px;
+    /* --spacer: 10px; */
 
     width: 100%;
     margin-left: auto;
