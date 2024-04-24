@@ -1,0 +1,43 @@
+/* 1st */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+:root {
+    /* --primary-color: #7264d6; */
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+}
+/* common */
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 30px;
+
+    background: #ccc;
+
+    font-size: 30px;
+    font-weight: 600;
+}
