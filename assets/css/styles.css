@@ -64,12 +64,16 @@ button {
 .header {
     width: 100%;
     margin-top: 20px;
-    padding: 0 135px;
+    padding: 20px 135px;
+    position: sticky;
+    top: 0;
+    background: #fdfdfd;
 }
 .header--warp {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .header-emai {
     display: flex;
@@ -101,9 +105,10 @@ button {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-
+    position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
 }
 .menu-list {
     display: flex;
