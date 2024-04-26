@@ -60,11 +60,29 @@ button {
 .btn:hover {
     opacity: 0.9;
 }
+.section-heading {
+    color: #080415;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17; /* 117.857% */
+    letter-spacing: -2.24px;
+}
+.section-desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+.center {
+    text-align: center;
+}
 /* Header */
 
 .header {
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 20px 135px;
     position: sticky;
     top: 0;
@@ -271,4 +289,51 @@ button {
 }
 .rencent-clients__content {
     width: 283px;
+}
+/* Specialities */
+.specialities {
+    margin-top: 33px;
+}
+.specialities-desc {
+    width: 534px;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+.special-card {
+    width: 370px;
+    background: #fbfaff;
+    height: auto;
+    padding: 33px 43px;
+    cursor: pointer;
+}
+.special-card__wrap {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 1px solid #0804150d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+}
+.special-card__wrap:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+.special-card__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.special-card__heading {
+    color: #080415;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+    margin-top: 22px;
+}
+.special-card__desc {
+    margin-top: 15px;
 }
