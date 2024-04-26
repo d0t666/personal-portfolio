@@ -424,3 +424,55 @@ button {
     min-width: 178px;
     margin-top: 50px;
 }
+/* about me */
+
+.about-me {
+    margin-top: 70px;
+    padding: 70px 0;
+}
+.aboutme_topcontent {
+    text-align: center;
+}
+.aboutme_hello {
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+    margin-bottom: 10px;
+}
+.aboutme_desc {
+    width: 570px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.about-me_experience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 156px;
+    text-align: center;
+}
+.about-me_experience-number {
+    color: #080415;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.35; /* 135.714% */
+    letter-spacing: 1.68px;
+    text-decoration-line: underline;
+}
+.about-me_experience-title {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+.about-me__inner {
+    padding: 20px 95px;
+    border-top: 1px solid #08041533;
+    border-bottom: 1px solid #08041533;
+    margin-top: 90px;
+}
