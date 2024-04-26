@@ -448,11 +448,11 @@ button {
     margin-top: 15px;
 }
 .about-me_experience {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    column-gap: 156px;
-    text-align: center;
+    /* column-gap: 17%; */
+    justify-content: space-around;
 }
 .about-me_experience-number {
     color: #080415;
@@ -475,4 +475,41 @@ button {
     border-top: 1px solid #08041533;
     border-bottom: 1px solid #08041533;
     margin-top: 90px;
+}
+/* video */
+.video_controls {
+    position: relative;
+}
+.video-thumb-img {
+    width: 100%;
+    object-fit: cover;
+}
+.video-playbtn--wrap {
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-playbtn {
+    color: #5d3bee;
+}
+.video-intro__btn {
+    color: #51586a;
+    background: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    min-width: 170px;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
