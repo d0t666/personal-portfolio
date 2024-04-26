@@ -514,6 +514,7 @@
                 <a href="#!" class="btn project-btn">All Projects</a>
             </div>
         </section>
+        <!-- BG half -->
         <div class="bg_half">
             <div class="container">
                 <!-- about me -->
@@ -652,6 +653,7 @@
                     </div>
                 </section>
             </div>
+            <!-- decor 1 -->
             <svg
                 class="bg_half_decor_01"
                 width="266"
@@ -691,6 +693,8 @@
                     />
                 </g>
             </svg>
+            <!-- decor 2 -->
+
             <svg
                 class="bg_half_decor_02"
                 width="338"
@@ -736,14 +740,94 @@
             <section class="faq">
                 <div class="row">
                     <div class="col">
-                        <div class="inner">faq_topcontent</div>
+                        <div class="faq__title">
+                            <h2 class="section-heading faq__heading">
+                                A few questions clients normally ask me
+                            </h2>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-10 col-md-12 col-12">
-                        <div class="inner">faq_item 1</div>
+                        <!-- FAQ1 -->
+                        <div class="fqa__item">
+                            <button class="accordion">
+                                What is your hourly rate?
+                            </button>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FAQ2 -->
+                        <div class="fqa__item">
+                            <button class="accordion">
+                                What type of projects do you take on?
+                            </button>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FAQ3 -->
+                        <div class="fqa__item">
+                            <button class="accordion">
+                                How do you charge for projects ?
+                            </button>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FAQ4 -->
+                        <div class="fqa__item">
+                            <button class="accordion">
+                                What time-zone do you work in?
+                            </button>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- FAQ5 -->
+                        <div class="fqa__item">
+                            <button class="accordion">
+                                How often can we communicate?
+                            </button>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-10 col-md-12 col-12">
+                    <!-- <div class="col-lg-10 col-md-12 col-12">
                         <div class="inner">faq_item 2</div>
                     </div>
                     <div class="col-lg-10 col-md-12 col-12">
@@ -754,7 +838,7 @@
                     </div>
                     <div class="col-lg-10 col-md-12 col-12">
                         <div class="inner">faq_item 5</div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <!-- gallery -->
@@ -791,5 +875,30 @@
             <div class="inner">footer</div>
             <div class="copyright"><div class="inner">copyright</div></div>
         </footer>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+            document.querySelectorAll(".fqa__item").forEach((item) => {
+                item.addEventListener("click", () => {
+                    if (item.classList.contains("clicked")) {
+                        item.classList.remove("clicked");
+                    } else {
+                        item.classList.add("clicked");
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
