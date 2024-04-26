@@ -337,3 +337,90 @@ button {
 .special-card__desc {
     margin-top: 15px;
 }
+/* Rencent project */
+.recent-project {
+    margin-top: 140px;
+    background: #5d3bee;
+    padding: 86px 0;
+}
+.recent-project_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    column-gap: 13%;
+}
+.recent-project_top-heading,
+.recent-project_top-desc {
+    color: #fff;
+}
+.recent-project_top-heading {
+    width: 40%;
+}
+.recent-project_top-desc {
+    opacity: 0.7;
+    width: 370px;
+}
+.project-item {
+    display: flex;
+    background: #fbfaff;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+.projec-item__content {
+    width: 220px;
+}
+.project-item__media {
+    width: 246px;
+}
+.project-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+}
+.project-item__bg {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    height: 100%;
+}
+.project-item__heading {
+    color: #080415;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+}
+.project-item__desc {
+    color: #51586a;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.43; /* 143.75% */
+    margin-top: 10px;
+}
+.project-item__link {
+    color: #080415;
+    font-family: "DM Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.66; /* 166.667% */
+    text-decoration-line: underline;
+    margin-top: 20px;
+    display: block;
+}
+.project-btn {
+    color: #080415;
+    background: #fff;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    min-width: 178px;
+    margin-top: 50px;
+}
