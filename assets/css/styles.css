@@ -56,6 +56,7 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 1.66; /* 166.667% */
+    cursor: pointer;
 }
 .btn:hover {
     opacity: 0.9;
@@ -726,7 +727,48 @@ button {
     height: 100%;
     object-fit: cover;
     transition: 0.2s;
+    cursor: pointer;
 }
 .gallery_img:hover {
     scale: 1.1;
+}
+/* cta */
+.cta {
+    padding: 68px 0;
+    text-align: center;
+    background: #fbfaff;
+    position: relative;
+    width: calc(100% - 270px);
+    margin: 0 auto;
+}
+.cta__icon-wrap {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+}
+.cta_icon {
+    width: 100%;
+    height: 100%;
+}
+.cta_heading {
+    margin: 20px 0;
+}
+.cta_desc {
+    width: 570px;
+    display: inline-block;
+    margin-bottom: 82px;
+}
+.cta-btn {
+    display: inline;
+    width: 20%;
+    max-width: 170px;
+    position: relative;
+    z-index: 1;
+}
+.cta_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
