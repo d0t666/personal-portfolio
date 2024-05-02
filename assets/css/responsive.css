@@ -282,7 +282,20 @@
         display: block; /* Hiển thị overlay khi menu active */
     }
     .menu-item {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    .panel {
+        font-size: 1.6rem;
+        line-height: 1.62; /* 162.5% */
+    }
+    .accordion {
+        font-size: 1.89rem;
+        font-weight: 500;
+        line-height: 1.25; /* 125% */
+        letter-spacing: -0.96px;
+    }
+    .menu-item__link {
+        font-size: 2rem;
     }
 }
 /*  */

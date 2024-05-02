@@ -646,7 +646,7 @@ button {
 .accordion {
     background-color: #fff;
     cursor: pointer;
-    padding: 18px;
+    padding-top: 0;
     width: 100%;
     border: none;
     text-align: left;
@@ -660,6 +660,10 @@ button {
     line-height: 40px; /* 125% */
     letter-spacing: -1.28px;
 }
+.fqa__item:not(:first-child) {
+    margin-top: 61px;
+    display: block;
+}
 
 .accordion:after {
     content: "\002B";
@@ -667,6 +671,13 @@ button {
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    border: 1px solid #0804151a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .active:after {
@@ -679,6 +690,11 @@ button {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
 }
 /* .accordion::selection {
     color: #5d3bee;
