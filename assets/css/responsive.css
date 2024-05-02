@@ -214,4 +214,68 @@
     .footer {
         border-bottom: none;
     }
+    .header {
+        padding: 2rem;
+    }
+    /* mobile header */
+    .mobile-header--warp .header-logo {
+        position: absolute;
+        left: 5rem;
+    }
+    .mobile-header--warp {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    .mobile-header--warp .header-emai {
+        margin-left: auto;
+    }
+    .toggle-wrap {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: solid 1px #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    #mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%; /* hoặc bất kỳ chiều rộng nào bạn muốn */
+        height: 100%;
+        background-color: white; /* Màu nền cho menu */
+        z-index: 1000; /* Chắc chắn phải cao hơn z-index của overlay */
+        display: none; /* Ban đầu không hiển thị */
+        transition: all 0.3s; /* Tạo hiệu ứng chuyển động mượt mà */
+        padding: 2rem;
+    }
+
+    #mobile-menu.active {
+        display: block; /* Hiển thị menu khi active */
+    }
+    #overlay {
+        position: fixed; /* Làm cho overlay bám sát khung nhìn, không di chuyển khi scroll */
+        top: 0;
+        left: 0;
+        width: 100%; /* Chiều rộng bằng toàn bộ khung nhìn */
+        height: 100%; /* Chiều cao bằng toàn bộ khung nhìn */
+        background-color: rgba(
+            0,
+            0,
+            0,
+            0.5
+        ); /* Màu nền đen với độ trong suốt */
+        z-index: 999; /* Đảm bảo overlay nằm trên các thành phần khác */
+        display: none; /* Ban đầu không hiển thị */
+    }
+
+    #mobile-menu.active + #overlay {
+        display: block; /* Hiển thị overlay khi menu active */
+    }
+    .menu-item {
+        margin-bottom: 1rem;
+    }
 }

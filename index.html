@@ -98,7 +98,7 @@
     <body>
         <!-- Header -->
         <header class="header">
-            <div class="header--warp">
+            <div class="header--warp hide-on-mobile">
                 <div class="header-emai">
                     <a href="#!" class="header-icon">
                         <img
@@ -130,6 +130,67 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
+            <!-- header mobile -->
+            <div class="mobile-header--warp show-on-mobile">
+                <a href="#!" class="header-logo"
+                    ><img class="logo" src="./assets/img/logo.png" alt=""
+                /></a>
+                <div class="header-emai">
+                    <a href="#!" class="header-icon">
+                        <img
+                            src="./assets/icon/header_icon_01.png"
+                            alt=""
+                            class="header-icon-img"
+                        />
+                    </a>
+                    <a href="#!" class="header-email-link hide-on-mobile"
+                        >hi@arif.interactive</a
+                    >
+                </div>
+                <a href="#!" class="toggle-wrap" id="menu-toggle">
+                    <svg
+                        width="17"
+                        height="8"
+                        viewBox="0 0 17 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 7H16"
+                            stroke="#5D3BEE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M1 1H16"
+                            stroke="#5D3BEE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </a>
+
+                <div id="mobile-menu">
+                    <!-- Các thành phần của menu, ví dụ: -->
+                    <ul>
+                        <li class="menu-item">
+                            <a href="#!" class="menu-item__link">Projects</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#!" class="menu-item__link">Journey</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#!" class="menu-item__link">Service</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#!" class="menu-item__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="overlay"></div>
             </div>
         </header>
         <!-- hero -->
@@ -1045,6 +1106,31 @@
                     }
                 });
             });
+            // a
+            document
+                .getElementById("menu-toggle")
+                .addEventListener("click", function () {
+                    var menu = document.getElementById("mobile-menu");
+                    var overlay = document.getElementById("overlay");
+
+                    if (menu.classList.contains("active")) {
+                        menu.classList.remove("active");
+                        overlay.style.display = "none";
+                    } else {
+                        menu.classList.add("active");
+                        overlay.style.display = "block";
+                    }
+                });
+
+            document
+                .getElementById("overlay")
+                .addEventListener("click", function () {
+                    var menu = document.getElementById("mobile-menu");
+                    var overlay = document.getElementById("overlay");
+
+                    menu.classList.remove("active");
+                    overlay.style.display = "none";
+                });
         </script>
     </body>
 </html>
